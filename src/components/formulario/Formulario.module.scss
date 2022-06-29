@@ -1,0 +1,31 @@
+.form{
+  background: #FFF9EB;
+  border: 2px solid #000000;
+  border-radius: 64px 64px 0px 0px;
+  width: 100%;
+  bottom: 0;
+  height: 50vh;
+  position: absolute;
+  left: 0;
+  &__title{
+    color: #4B69FD;
+  }
+  &__input{
+    border: 2px solid #000000;
+    border-radius: 37.5px 0px 0px 37.5px;
+    box-shadow: 4px 4px 0px #000000;
+    background: #FFFFFF;
+    width: auto;
+    width: 500px;
+    height: 32px;
+  }
+  &__botao{
+    border: 2px solid #000000;
+    box-shadow: 4px 4px 0px #000000;
+    border-radius: 0px 37.5px 37.5px 0px;
+    background: #C4C4C4;
+    color: #444444;
+    width: 227px;
+    height: 38px;
+  }
+}
