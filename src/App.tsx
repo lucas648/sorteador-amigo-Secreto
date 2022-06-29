@@ -1,11 +1,17 @@
-import Formulario from './components/formulario';
-import appStyle from './App.module.scss'
+
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { RecoilRoot } from 'recoil';
+import Formulario from './components/formulario/index';
 
 function App() {
   return (
-    <div className={appStyle.App}>
-      <Formulario/>
-    </div>
+    <BrowserRouter>
+      <RecoilRoot>
+        <Routes>
+          <Route path='/' element={Formulario} />
+        </Routes>
+      </RecoilRoot>
+    </BrowserRouter>
   );
 }
 
