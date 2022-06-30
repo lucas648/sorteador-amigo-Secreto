@@ -21,7 +21,7 @@ export default function Formulario(){
 
   return(
     <form className={formStyles.form} onSubmit={adicionarParticipante}>
-      <p>Vamos Começar!!</p>
+      <h2>Vamos Começar!!</h2>
       <input 
         ref={inputRef}
         value={nome}
