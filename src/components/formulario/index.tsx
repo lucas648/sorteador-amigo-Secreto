@@ -40,5 +40,5 @@ export default function Formulario(){
       </button>
       {mensagemdeEroo && <p role={'alert'}>{mensagemdeEroo}</p>}
     </form>
-  )
+  );
 }
