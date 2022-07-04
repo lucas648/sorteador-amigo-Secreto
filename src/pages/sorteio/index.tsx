@@ -3,6 +3,7 @@ import { useListaParticipantes } from "../../state/hooks/useListaParticipantes"
 import { useResultadoDoSorteio } from "../../state/hooks/useResultadoDoSorteio";
 
 import sorteioStyles from './Sorteio.module.scss'
+import aviao from '../../images/aviao.png'
 
 export default function Sorteio(){
   
@@ -21,9 +22,9 @@ export default function Sorteio(){
   }
 
   return(
-    <section className={sorteioStyles.sorteio}>
+    <section className={`${sorteioStyles.sorteio} ${sorteioStyles.container}`}>
       <h2>Quem vai tirar o papelzinho?</h2>
-      <form onSubmit={sortear}>
+      <form className={sorteioStyles.form} onSubmit={sortear}>
         <select 
           required
           name="participanteDaVez"
@@ -50,7 +51,7 @@ export default function Sorteio(){
        }
       <footer className={sorteioStyles.sorteio}>
         <img 
-          src="../../images/aviao.png" 
+          src={aviao}
           className={sorteioStyles.sorteio} 
           alt="Um desenho de um avião de papel" 
         />
